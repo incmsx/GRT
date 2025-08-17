@@ -35,7 +35,7 @@ contract NFT is ERC721, Ownable {
         emit Minted(
             _msgSender(),
             tokenIdCounter,
-            BASIC_COST,
+            BASIC_COST, // должно быть msg.value
             tokenURI(tokenIdCounter),
             block.timestamp
         );
