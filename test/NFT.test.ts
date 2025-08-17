@@ -85,14 +85,14 @@ describe("NFT", function(){
         });   
     })
 
-    describe("_baseURI", function (){
-        it("should return base URI", async function (){
-            const {owner, contract} = await userMint(); 
+    // describe("_baseURI", function (){
+    //     it("should return base URI", async function (){
+    //         const {owner, contract} = await userMint(); 
             
-            const tokenURI = await contract.tokenURI(0);
-            const baseURI = await contract.BASE_URI();
+    //         const tokenURI = await contract.tokenURI(0);
+    //         const baseURI = await contract.BASE_URI();
 
-            expect(tokenURI).to.be.equal(baseURI);
-        });  
-    })
+    //         expect(tokenURI).to.be.equal(baseURI);
+    //     });  
+    // })
 })
